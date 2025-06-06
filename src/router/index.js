@@ -1,13 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import FormComponent from '../components/FormComponent.vue';
-import PreviewComponent from '../components/PreviewComponent.vue';
+import PreviewComponent from '../views/Preview.vue';
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory('/vue-family-app/'),
   routes: [
+    { path: '/', redirect: '/form' },
     { path: '/form', component: FormComponent },
     { path: '/preview', component: PreviewComponent },
-    { path: '/', redirect: '/form' }
   ]
 });
 
