@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import FormComponent from '../components/FormComponent.vue';
-import PreviewComponent from '../views/Preview.vue';
+import PreviewComponent from '../components/PreviewComponent.vue';
 
 const router = createRouter({
   history: createWebHistory('/vue-family-app/'),
