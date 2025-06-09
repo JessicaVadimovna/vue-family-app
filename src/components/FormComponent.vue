@@ -42,7 +42,9 @@
             max="999"
           />
         </div>
-        <button @click="removeChild(index)" class="delete-btn">Удалить</button>
+        <button @click="removeChild(index)" class="delete-btn">
+  <span class="delete-label">Удалить</span>
+</button>
       </div>
     </div>
     <button @click="save" class="save-btn">Сохранить</button>
@@ -148,6 +150,7 @@ h3 {
   line-height: 24px;
   letter-spacing: 0px;
   vertical-align: middle;
+  margin-bottom: 20px;
 }
 .input-group {
   display: flex;
@@ -212,7 +215,8 @@ input[type="number"] {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 11px;
+  margin-top: 33px;
 }
 .children-header h3 {
   margin: 0;
@@ -253,6 +257,10 @@ input[type="number"] {
   cursor: pointer;
   font-size: 14px;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  pointer-events: none;
+}
+.delete-label {
+  pointer-events: auto; 
 }
 .delete-btn:hover {
   color: rgba(15, 121, 175, 1);
@@ -264,7 +272,7 @@ input[type="number"] {
   padding: 10px 20px;
   border-radius: 100px;
   cursor: pointer;
-  margin-top: 30px;
+  margin-top: 25px;
   margin-left: 0;
   font-weight: 400;
   font-size: 14px;

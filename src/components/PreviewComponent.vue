@@ -53,9 +53,9 @@ export default {
 
 <style scoped>
 .preview-container {
-  padding: 20px;
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: 616px;
+  margin: 30px auto 0 auto;
+  background-color: #fff;
 }
 h2, h3 {
   font-weight: 500;
@@ -64,6 +64,12 @@ h2, h3 {
   letter-spacing: 0px;
   vertical-align: middle;
   color: rgba(17, 17, 17, 1);
+}
+h2 {
+  margin: 0;
+}
+h3 {
+  margin: 60px 0 20px 0;
 }
 p {
   font-weight: 700;
